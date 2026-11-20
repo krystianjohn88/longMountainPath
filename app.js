@@ -9,6 +9,7 @@ const OPTIONAL_PREFIXES = ['przelecz', 'hala', 'schronisko', 'pttk', 'stacja', '
 const DEFAULT_THRESHOLD = 80;
 const THRESHOLD_KEY = 'gsb.threshold';
 const TRAIL_KEY = 'gsb.trail';
+const MODE_KEY = 'gsb.mode';
 
 const $ = (id) => document.getElementById(id);
 
@@ -24,6 +25,8 @@ const state = {
   revealed: 0,
   close: 0,          // zaliczone z literówką (zgodność < 100%)
   threshold: loadThreshold(),
+  mode: loadMode(),  // 'type' – wpisywanie, 'order' – układanie klocków (tylko pasma)
+  order: null,       // stan układanki
 };
 
 // --- ustawienia (localStorage może być niedostępny – wtedy domyślne) ----------
@@ -46,6 +49,14 @@ function loadTrailId() {
 
 function saveTrailId(id) {
   try { localStorage.setItem(TRAIL_KEY, id); } catch {}
+}
+
+function loadMode() {
+  try { return localStorage.getItem(MODE_KEY) === 'order' ? 'order' : 'type'; } catch { return 'type'; }
+}
+
+function saveMode(mode) {
+  try { localStorage.setItem(MODE_KEY, mode); } catch {}
 }
 
 // --- porównywanie odpowiedzi ---------------------------------------------------
@@ -225,7 +236,7 @@ async function renderParts() {
     btn.type = 'button';
     btn.className = 'part';
     btn.innerHTML = `<span>${p.name}</span><small>${p.count} pkt</small>`;
-    btn.addEventListener('click', () => startQuiz(p.name));
+    btn.addEventListener('click', () => startPart(p.name));
     li.appendChild(btn);
     $('parts').appendChild(li);
   }
@@ -250,6 +261,32 @@ $('dir-toggle').addEventListener('click', () => {
 
 $('start-all').addEventListener('click', () => startQuiz(null));
 
+// --- tryb nauki ------------------------------------------------------------------
+
+function renderMode() {
+  const order = state.mode === 'order';
+  document.querySelectorAll('.mode').forEach((b) => {
+    b.setAttribute('aria-pressed', String(b.dataset.mode === state.mode));
+  });
+  // Układanie tylko dla pasm: chowamy „Cały szlak” i próg zgodności (nie dotyczy klocków).
+  $('start-all').hidden = order;
+  $('threshold-setting').hidden = order;
+  $('order-info').hidden = !order;
+  $('parts-heading').textContent = order ? 'Wybierz pasmo do ułożenia' : '…albo wybierz pasmo';
+}
+
+document.querySelectorAll('.mode').forEach((b) => {
+  b.addEventListener('click', () => {
+    state.mode = b.dataset.mode;
+    saveMode(state.mode);
+    renderMode();
+  });
+});
+
+function startPart(part) {
+  return state.mode === 'order' ? startOrder(part) : startQuiz(part);
+}
+
 // --- lista punktów -------------------------------------------------------------
 
 async function showList() {
@@ -273,7 +310,7 @@ async function showList() {
       learn.className = 'pill small';
       learn.textContent = 'Ucz się →';
       const part = p.name_mountain_part;
-      learn.addEventListener('click', () => startQuiz(part));
+      learn.addEventListener('click', () => startPart(part));
       head.append(h, learn);
       group.list = document.createElement('ol');
       group.el.append(head, group.list);
@@ -328,6 +365,7 @@ $('list-back').addEventListener('click', () => show('start'));
 async function startQuiz(part) {
   const points = await getPoints(part);
   if (state.reversed) points.reverse();
+  state.lastMode = 'type';
   Object.assign(state, {
     part, points, index: 0, hintLevel: 0, mistakes: 0, revealed: 0, close: 0,
   });
@@ -447,9 +485,121 @@ function finish() {
   show('end');
 }
 
-$('again').addEventListener('click', () => startQuiz(state.part));
+// --- układanie klocków --------------------------------------------------------------
+// Na górze ponumerowane miejsca, na dole wymieszane klocki. Dotknięcie klocka od razu
+// sprawdza, czy to następny punkt: dobry ląduje na swoim miejscu (zielony),
+// zły miga na czerwono i zostaje na dole.
+
+function shuffle(items) {
+  const a = items.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+async function startOrder(part) {
+  const points = await getPoints(part);
+  if (state.reversed) points.reverse();
+  const tiles = points.map((p, i) => ({ key: i, label: p.label }));
+  let pool = shuffle(tiles);
+  // Przy kilku punktach losowanie może dać od razu dobrą kolejność – mieszamy ponownie.
+  for (let n = 0; n < 5 && pool.length > 1 && pool.every((t, i) => t.label === points[i].label); n++) {
+    pool = shuffle(tiles);
+  }
+  state.part = part;
+  state.lastMode = 'order';
+  state.order = {
+    expected: points,
+    slots: Array(points.length).fill(null),
+    next: 0,          // indeks następnego miejsca do wypełnienia
+    pool,
+    mistakes: 0,
+  };
+  $('order-title').textContent = `${state.trail.short} · ${part} · układanie`;
+  setOrderFeedback('Dotknij klocka, który jest następny na szlaku', '');
+  show('order');
+  renderOrder();
+}
+
+function setOrderFeedback(text, kind) {
+  const el = $('order-feedback');
+  el.textContent = text;
+  el.className = `feedback ${kind}`;
+}
+
+function renderOrder() {
+  const o = state.order;
+  $('order-progress').textContent = `Ułożone: ${o.next} / ${o.slots.length} · pomyłki: ${o.mistakes}`;
+
+  const slots = $('slots');
+  slots.innerHTML = '';
+  o.slots.forEach((tile, i) => {
+    const li = document.createElement('li');
+    const nr = document.createElement('span');
+    nr.className = 'nr';
+    nr.textContent = i + 1;
+    const label = document.createElement('span');
+    label.className = 'label';
+    label.textContent = tile ? tile.label : '';
+    li.append(nr, label);
+    li.className = tile ? 'locked' : (i === o.next ? 'empty next' : 'empty');
+    slots.appendChild(li);
+  });
+
+  const pool = $('pool');
+  pool.innerHTML = '';
+  for (const tile of o.pool) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'tile';
+    b.textContent = tile.label;
+    b.addEventListener('click', () => place(tile, b));
+    pool.appendChild(b);
+  }
+  pool.hidden = o.pool.length === 0;
+
+  // Następne wolne miejsce zawsze widoczne nad klockami.
+  const next = slots.children[o.next];
+  if (next) next.scrollIntoView({ block: 'nearest' });
+}
+
+function place(tile, button) {
+  const o = state.order;
+  const expected = o.expected[o.next];
+  // Porównujemy nazwy – dwa punkty o tej samej nazwie (np. Beskidek) są zamienne.
+  if (tile.label !== expected.label) {
+    o.mistakes++;
+    setOrderFeedback(`✗ „${tile.label}” to nie ten punkt`, 'bad');
+    $('order-progress').textContent = `Ułożone: ${o.next} / ${o.slots.length} · pomyłki: ${o.mistakes}`;
+    button.classList.remove('wrong');
+    void button.offsetWidth; // restart animacji
+    button.classList.add('wrong');
+    return;
+  }
+  o.slots[o.next] = tile;
+  o.next++;
+  o.pool = o.pool.filter((t) => t !== tile);
+  setOrderFeedback(`✓ ${tile.label}`, 'ok');
+  renderOrder();
+  if (o.next === o.slots.length) setTimeout(finishOrder, 500);
+}
+
+$('order-back').addEventListener('click', () => show('start'));
+
+function finishOrder() {
+  const o = state.order;
+  $('summary').textContent =
+    `Ułożone punkty: ${o.slots.length} · pomyłki: ${o.mistakes}`;
+  show('end');
+}
+
+$('again').addEventListener('click', () =>
+  (state.lastMode === 'order' ? startOrder(state.part) : startQuiz(state.part)));
 $('home').addEventListener('click', () => show('start'));
 
+renderMode();
 renderThreshold();
 loadTrails()
   .then(() => selectTrail(state.trail))

@@ -29,6 +29,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
@@ -216,6 +217,79 @@ h2 { font-size: 1rem; color: var(--muted); font-weight: 500; margin: 12px 0 0; }
 .actions { display: flex; gap: 8px; }
 
 .error { color: var(--bad); }
+
+/* Przełącznik trybu nauki */
+.modes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.mode {
+  font: inherit;
+  color: inherit;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 2px solid var(--border);
+  background: var(--card);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.mode[aria-pressed="true"] { border-color: var(--accent); font-weight: 600; }
+.order-info { margin: 0; color: var(--muted); font-size: .9rem; }
+
+/* Układanie: ponumerowane miejsca u góry, klocki na dole */
+.slots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.slots li {
+  display: grid;
+  grid-template-columns: 2em minmax(0, 1fr);
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: var(--card);
+  border: 2px dashed var(--border);
+}
+.slots .nr { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.slots .label { overflow-wrap: anywhere; }
+.slots li.filled { border-style: solid; cursor: pointer; }
+.slots li.next { border-color: var(--accent); }
+.slots li.locked { border: 2px solid var(--ok); background: color-mix(in srgb, var(--ok) 12%, var(--card)); cursor: default; }
+.slots li.wrong { border: 2px solid var(--bad); background: color-mix(in srgb, var(--bad) 12%, var(--card)); animation: shake .3s; }
+
+.order-bottom { flex: 0 0 auto; display: flex; flex-direction: column; gap: 8px; }
+.pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-height: 34vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 2px;
+}
+.tile {
+  font: inherit;
+  font-size: .95rem;
+  color: inherit;
+  min-height: 40px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-bottom-width: 3px;
+  background: var(--card);
+  border-radius: 10px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.tile:active { transform: translateY(1px); border-bottom-width: 2px; }
+.tile.wrong { border-color: var(--bad); color: var(--bad); animation: shake .3s; }
+.btn:disabled { opacity: .45; cursor: default; }
 
 /* Lista punktów */
 .list-head {

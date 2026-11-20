@@ -12,7 +12,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   <!-- Ekran startowy: wybór zakresu nauki -->
@@ -30,16 +30,24 @@
       <button id="dir-toggle" class="pill" type="button">…</button>
     </div>
 
-    <div class="setting">
+    <div class="modes" role="group" aria-label="Tryb nauki">
+      <button class="mode" type="button" data-mode="type">✍️ Wpisywanie</button>
+      <button class="mode" type="button" data-mode="order">🧩 Układanie</button>
+    </div>
+
+    <div id="threshold-setting" class="setting">
       <label for="threshold">Akceptuj od <strong id="threshold-value">80%</strong> zgodności</label>
       <input id="threshold" type="range" min="50" max="100" step="5" value="80">
       <small>100% = tylko dokładna nazwa (bez polskich znaków też się liczy)</small>
     </div>
+    <p id="order-info" class="setting order-info">
+      Dotykaj klocków z nazwami w kolejności szlaku – każdy jest od razu sprawdzany. Tryb dostępny dla pojedynczych pasm.
+    </p>
 
     <button id="start-all" class="btn primary big" type="button">Cały szlak od początku</button>
     <button id="browse" class="btn big" type="button">📋 Przeglądaj punkty</button>
 
-    <h2>…albo wybierz pasmo</h2>
+    <h2 id="parts-heading">…albo wybierz pasmo</h2>
     <ul id="parts" class="parts"></ul>
   </section>
 
@@ -85,6 +93,24 @@
     </form>
   </section>
 
+  <!-- Układanie punktów pasma w kolejności -->
+  <section id="screen-order" class="screen quiz">
+    <header class="bar">
+      <button id="order-back" class="icon-btn" type="button" aria-label="Wróć">←</button>
+      <div class="bar-title">
+        <strong id="order-title"></strong>
+        <span id="order-progress"></span>
+      </div>
+    </header>
+
+    <ol id="slots" class="slots"></ol>
+
+    <div class="order-bottom">
+      <p id="order-feedback" class="feedback" aria-live="polite"></p>
+      <div id="pool" class="pool"></div>
+    </div>
+  </section>
+
   <!-- Podsumowanie -->
   <section id="screen-end" class="screen">
     <header class="hero">
@@ -95,6 +121,6 @@
     <button id="home" class="btn big" type="button">Menu</button>
   </section>
 
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

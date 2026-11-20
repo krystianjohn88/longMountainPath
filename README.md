@@ -26,6 +26,12 @@ Strona statyczna w czystym JS, bez serwera i bez zależności. Działa na GitHub
 
 Nowy szlak = nowy plik z punktami + wpis w `trails.json`. Kierunek „od–do” bierze się z pierwszego i ostatniego punktu.
 
+
+## Tryby nauki
+
+- **✍️ Wpisywanie**: wpisujesz kolejne punkty (cały szlak albo pasmo).
+- **🧩 Układanie**: tylko dla pasm. Na dole są wymieszane klocki z nazwami – dotykasz je w kolejności szlaku. Każdy jest od razu sprawdzany: dobry trafia na swoje miejsce (zielony), zły miga na czerwono i liczy się jako pomyłka.
+
 ## Sprawdzanie odpowiedzi
 
 Nie liczą się polskie znaki, wielkość liter ani myślniki. Przedrostki „Przełęcz”, „Hala”, „Schronisko PTTK”,
