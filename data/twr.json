@@ -1,0 +1,389 @@
+[
+  {
+    "id": 1,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Tarnów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 2,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Zawada",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 3,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Łękawica",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 4,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Trzemeska Góra",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 5,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Tuchów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 6,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Burzyn",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 7,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Brzanka",
+    "typ_punktu": "góra",
+    "height": 534
+  },
+  {
+    "id": 8,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Jodłówka Tuchowska",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 9,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Rzepiennik Strzyżewski",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 10,
+    "name_mountain_part": "Pogórze Ciężkowickie",
+    "label": "Skamieniałe Miasto (Ciężkowice)",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 11,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Kąśna Dolna",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 12,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Styrek",
+    "typ_punktu": "góra",
+    "height": 430
+  },
+  {
+    "id": 13,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Bruśnik",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 14,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Bukowiec",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 15,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Żebraczka",
+    "typ_punktu": "góra",
+    "height": 502
+  },
+  {
+    "id": 16,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Przydonica",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 17,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Bartkowa-Posadowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 18,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Rożnów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 19,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Ostra Góra",
+    "typ_punktu": "góra",
+    "height": 483
+  },
+  {
+    "id": 20,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Tabaszowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 21,
+    "name_mountain_part": "Pogórze Rożnowskie",
+    "label": "Przełęcz św. Justa",
+    "typ_punktu": "przełęcz",
+    "height": 400
+  },
+  {
+    "id": 22,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Jodłowiec Wielki",
+    "typ_punktu": "góra",
+    "height": 486
+  },
+  {
+    "id": 23,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Świdnik",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 24,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Skrzętla-Rojówka",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 25,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Babia Góra",
+    "typ_punktu": "góra",
+    "height": 728
+  },
+  {
+    "id": 26,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Jaworz",
+    "typ_punktu": "góra",
+    "height": 921
+  },
+  {
+    "id": 27,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Sałasz Wschodni",
+    "typ_punktu": "góra",
+    "height": 909
+  },
+  {
+    "id": 28,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Sałasz Zachodni",
+    "typ_punktu": "góra",
+    "height": 868
+  },
+  {
+    "id": 29,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Limanowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 30,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Golców",
+    "typ_punktu": "góra",
+    "height": 752
+  },
+  {
+    "id": 31,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Przełęcz Ostra",
+    "typ_punktu": "przełęcz",
+    "height": 800
+  },
+  {
+    "id": 32,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Modyń",
+    "typ_punktu": "góra",
+    "height": 1029
+  },
+  {
+    "id": 33,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Zbludza",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 34,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Kamienica",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 35,
+    "name_mountain_part": "Gorce",
+    "label": "Ochotnica Dolna",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 36,
+    "name_mountain_part": "Gorce",
+    "label": "Lubań",
+    "typ_punktu": "góra",
+    "height": 1211
+  },
+  {
+    "id": 37,
+    "name_mountain_part": "Gorce",
+    "label": "Przełęcz Snozka",
+    "typ_punktu": "przełęcz",
+    "height": 653
+  },
+  {
+    "id": 38,
+    "name_mountain_part": "Pieniny",
+    "label": "Czorsztyn",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 39,
+    "name_mountain_part": "Pieniny",
+    "label": "Majerz",
+    "typ_punktu": "góra",
+    "height": 689
+  },
+  {
+    "id": 40,
+    "name_mountain_part": "Pieniny",
+    "label": "Przełęcz Osice",
+    "typ_punktu": "przełęcz",
+    "height": 668
+  },
+  {
+    "id": 41,
+    "name_mountain_part": "Pieniny",
+    "label": "Przełęcz Trzy Kopce",
+    "typ_punktu": "przełęcz",
+    "height": 795
+  },
+  {
+    "id": 42,
+    "name_mountain_part": "Pieniny",
+    "label": "Przełęcz Szopka",
+    "typ_punktu": "przełęcz",
+    "height": 779
+  },
+  {
+    "id": 43,
+    "name_mountain_part": "Pieniny",
+    "label": "Trzy Korony",
+    "typ_punktu": "góra",
+    "height": 982
+  },
+  {
+    "id": 44,
+    "name_mountain_part": "Pieniny",
+    "label": "Zamkowa Góra",
+    "typ_punktu": "góra",
+    "height": 799
+  },
+  {
+    "id": 45,
+    "name_mountain_part": "Pieniny",
+    "label": "Ociemny Wierch",
+    "typ_punktu": "góra",
+    "height": 740
+  },
+  {
+    "id": 46,
+    "name_mountain_part": "Pieniny",
+    "label": "Czerteż",
+    "typ_punktu": "góra",
+    "height": 774
+  },
+  {
+    "id": 47,
+    "name_mountain_part": "Pieniny",
+    "label": "Czertezik",
+    "typ_punktu": "góra",
+    "height": 772
+  },
+  {
+    "id": 48,
+    "name_mountain_part": "Pieniny",
+    "label": "Przełęcz Sosnów",
+    "typ_punktu": "przełęcz",
+    "height": 650
+  },
+  {
+    "id": 49,
+    "name_mountain_part": "Pieniny",
+    "label": "Sokolica",
+    "typ_punktu": "góra",
+    "height": 747
+  },
+  {
+    "id": 50,
+    "name_mountain_part": "Pieniny",
+    "label": "Schronisko PTTK Orlica",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 51,
+    "name_mountain_part": "Pieniny",
+    "label": "Szafranówka",
+    "typ_punktu": "góra",
+    "height": 742
+  },
+  {
+    "id": 52,
+    "name_mountain_part": "Pieniny",
+    "label": "Cyrhle",
+    "typ_punktu": "góra",
+    "height": 774
+  },
+  {
+    "id": 53,
+    "name_mountain_part": "Pieniny",
+    "label": "Durbaszka",
+    "typ_punktu": "góra",
+    "height": 942
+  },
+  {
+    "id": 54,
+    "name_mountain_part": "Pieniny",
+    "label": "Wysoka (trawers)",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 55,
+    "name_mountain_part": "Pieniny",
+    "label": "Smerekowa (trawers)",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 56,
+    "name_mountain_part": "Pieniny",
+    "label": "Wierchliczka",
+    "typ_punktu": "góra",
+    "height": 964
+  },
+  {
+    "id": 57,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Przełęcz Rozdziela",
+    "typ_punktu": "przełęcz",
+    "height": 803
+  },
+  {
+    "id": 58,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Gromadzka Przełęcz",
+    "typ_punktu": "przełęcz",
+    "height": 931
+  },
+  {
+    "id": 59,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Wielki Rogacz",
+    "typ_punktu": "góra",
+    "height": 1182
+  }
+]

@@ -6,6 +6,7 @@ w obu kierunkach.
 - **GSB** – Główny Szlak Beskidzki (Ustroń ↔ Wołosate)
 - **MSB** – Mały Szlak Beskidzki (Bielsko-Biała ↔ Luboń Wielki)
 - **NSK** – Niebieski Szlak Karpacki (Grybów ↔ Rzeszów)
+- **TWR** – „Błękitny Rogacz”, niebieski szlak Tarnów ↔ Wielki Rogacz
 
 **Uruchom w przeglądarce:** https://krystianjohn88.github.io/longMountainPath/
 
@@ -14,7 +15,7 @@ Strona statyczna w czystym JS, bez serwera i bez zależności. Działa na GitHub
 ## Dane – `data/`
 
 - `trails.json` – lista szlaków: `id`, `name`, `short`, `color` (kolor znakowania), `file`
-- `gsb.json`, `msb.json`, `nsk.json` – punkty szlaku w kolejności (wg `id`):
+- `gsb.json`, `msb.json`, `nsk.json`, `twr.json` – punkty szlaku w kolejności (wg `id`):
 
 ```json
 { "id": 1, "name_mountain_part": "Beskid Niski", "label": "Chełm", "typ_punktu": "góra", "height": 778 }
