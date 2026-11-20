@@ -2,5 +2,5 @@
   { "id": "gsb", "name": "Główny Szlak Beskidzki", "short": "GSB", "color": "#c0392b", "file": "gsb.json" },
   { "id": "msb", "name": "Mały Szlak Beskidzki", "short": "MSB", "color": "#c0392b", "file": "msb.json" },
   { "id": "nsk", "name": "Niebieski Szlak Karpacki", "short": "NSK", "color": "#2463b8", "file": "nsk.json" },
-  { "id": "twr", "name": "Błękitny Rogacz (Tarnów – Wielki Rogacz)", "short": "TWR", "color": "#2463b8", "file": "twr.json" }
+  { "id": "twr", "name": "Niebieski szlak turystyczny Tarnów – Wielki Rogacz", "short": "TWR", "color": "#2463b8", "file": "twr.json" }
 ]

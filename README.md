@@ -6,7 +6,7 @@ w obu kierunkach.
 - **GSB** – Główny Szlak Beskidzki (Ustroń ↔ Wołosate)
 - **MSB** – Mały Szlak Beskidzki (Bielsko-Biała ↔ Luboń Wielki)
 - **NSK** – Niebieski Szlak Karpacki (Grybów ↔ Rzeszów)
-- **TWR** – „Błękitny Rogacz”, niebieski szlak Tarnów ↔ Wielki Rogacz
+- **TWR** – Niebieski szlak turystyczny Tarnów – Wielki Rogacz
 
 **Uruchom w przeglądarce:** https://krystianjohn88.github.io/longMountainPath/
 
