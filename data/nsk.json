@@ -1,0 +1,870 @@
+[
+  {
+    "id": 1,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Grybów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 2,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Chełm",
+    "typ_punktu": "góra",
+    "height": 778
+  },
+  {
+    "id": 3,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Wawrzka",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 4,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Tania Góra",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 5,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Flasza",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 6,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Sucha Homola",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 7,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kielczek",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 8,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Polana",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 9,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Homola",
+    "typ_punktu": "góra",
+    "height": 712
+  },
+  {
+    "id": 10,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Czarna",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 11,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Jaworzynka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 12,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Dzielec",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 13,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Hańczowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 14,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Ropki",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 15,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Wysowa-Zdrój",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 16,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Regetowska",
+    "typ_punktu": "przełęcz",
+    "height": 646
+  },
+  {
+    "id": 17,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Jaworzyna Konieczniańska",
+    "typ_punktu": "góra",
+    "height": 881
+  },
+  {
+    "id": 18,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Beskidek",
+    "typ_punktu": "góra",
+    "height": 685
+  },
+  {
+    "id": 19,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Cmentarz wojenny nr 46 (Konieczna)",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 20,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Beskidek",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 21,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Beskidek",
+    "typ_punktu": "góra",
+    "height": 689
+  },
+  {
+    "id": 22,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz pod Dębim Wierchem",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 23,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Beskid (nad Ożenną)",
+    "typ_punktu": "przełęcz",
+    "height": 590
+  },
+  {
+    "id": 24,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Czeremcha",
+    "typ_punktu": "góra",
+    "height": 670
+  },
+  {
+    "id": 25,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Kuchtowska",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 26,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Uhliska",
+    "typ_punktu": "góra",
+    "height": 678
+  },
+  {
+    "id": 27,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Sabatowski Wierch",
+    "typ_punktu": "góra",
+    "height": 675
+  },
+  {
+    "id": 28,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Szczob",
+    "typ_punktu": "góra",
+    "height": 697
+  },
+  {
+    "id": 29,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Mazgalica",
+    "typ_punktu": "przełęcz",
+    "height": 585
+  },
+  {
+    "id": 30,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Brdo",
+    "typ_punktu": "góra",
+    "height": 646
+  },
+  {
+    "id": 31,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Dukielska",
+    "typ_punktu": "przełęcz",
+    "height": 500
+  },
+  {
+    "id": 32,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Czeremcha",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 33,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Bredonne",
+    "typ_punktu": "góra",
+    "height": 694
+  },
+  {
+    "id": 34,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Jasiel",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 35,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kamień nad Jaśliskami",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 36,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kanasiówka",
+    "typ_punktu": "góra",
+    "height": 831
+  },
+  {
+    "id": 37,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Pasika",
+    "typ_punktu": "góra",
+    "height": 848
+  },
+  {
+    "id": 38,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Danawa",
+    "typ_punktu": "góra",
+    "height": 841
+  },
+  {
+    "id": 39,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Garb Średni",
+    "typ_punktu": "góra",
+    "height": 822
+  },
+  {
+    "id": 40,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Stredny Hrb",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 41,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kluckov",
+    "typ_punktu": "góra",
+    "height": 767
+  },
+  {
+    "id": 42,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Radoszycka (Laborecký priesmyk)",
+    "typ_punktu": "przełęcz",
+    "height": 684
+  },
+  {
+    "id": 43,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Łupkowska",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 44,
+    "name_mountain_part": "Bieszczady",
+    "label": "Stary Łupków",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 45,
+    "name_mountain_part": "Bieszczady",
+    "label": "Schronisko Koniec Świata",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 46,
+    "name_mountain_part": "Bieszczady",
+    "label": "Zubeńsko",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 47,
+    "name_mountain_part": "Bieszczady",
+    "label": "Wysoki Groń",
+    "typ_punktu": "góra",
+    "height": 905
+  },
+  {
+    "id": 48,
+    "name_mountain_part": "Bieszczady",
+    "label": "Wierch nad Łazem",
+    "typ_punktu": "góra",
+    "height": 864
+  },
+  {
+    "id": 49,
+    "name_mountain_part": "Bieszczady",
+    "label": "Buniów",
+    "typ_punktu": "góra",
+    "height": 817
+  },
+  {
+    "id": 50,
+    "name_mountain_part": "Bieszczady",
+    "label": "Gmyszów Wierch",
+    "typ_punktu": "góra",
+    "height": 876
+  },
+  {
+    "id": 51,
+    "name_mountain_part": "Bieszczady",
+    "label": "Rydoszowa",
+    "typ_punktu": "góra",
+    "height": 880
+  },
+  {
+    "id": 52,
+    "name_mountain_part": "Bieszczady",
+    "label": "Hawrań",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 53,
+    "name_mountain_part": "Bieszczady",
+    "label": "Balnica",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 54,
+    "name_mountain_part": "Bieszczady",
+    "label": "Solinka",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 55,
+    "name_mountain_part": "Bieszczady",
+    "label": "Czerenin",
+    "typ_punktu": "góra",
+    "height": 929
+  },
+  {
+    "id": 56,
+    "name_mountain_part": "Bieszczady",
+    "label": "Czerteż",
+    "typ_punktu": "góra",
+    "height": 920
+  },
+  {
+    "id": 57,
+    "name_mountain_part": "Bieszczady",
+    "label": "Beskyd",
+    "typ_punktu": "góra",
+    "height": 925
+  },
+  {
+    "id": 58,
+    "name_mountain_part": "Bieszczady",
+    "label": "Stryb (Strop)",
+    "typ_punktu": "góra",
+    "height": 1011
+  },
+  {
+    "id": 59,
+    "name_mountain_part": "Bieszczady",
+    "label": "Sinkowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 60,
+    "name_mountain_part": "Bieszczady",
+    "label": "Rypi Wierch",
+    "typ_punktu": "góra",
+    "height": 1003
+  },
+  {
+    "id": 61,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz nad Roztokami Górnymi",
+    "typ_punktu": "przełęcz",
+    "height": 801
+  },
+  {
+    "id": 62,
+    "name_mountain_part": "Bieszczady",
+    "label": "Okrąglik",
+    "typ_punktu": "góra",
+    "height": 1101
+  },
+  {
+    "id": 63,
+    "name_mountain_part": "Bieszczady",
+    "label": "Kurników Beskid",
+    "typ_punktu": "góra",
+    "height": 1037
+  },
+  {
+    "id": 64,
+    "name_mountain_part": "Bieszczady",
+    "label": "Płasza",
+    "typ_punktu": "góra",
+    "height": 1162
+  },
+  {
+    "id": 65,
+    "name_mountain_part": "Bieszczady",
+    "label": "Dziurkowiec",
+    "typ_punktu": "góra",
+    "height": 1188
+  },
+  {
+    "id": 66,
+    "name_mountain_part": "Bieszczady",
+    "label": "Riaba Skała",
+    "typ_punktu": "góra",
+    "height": 1199
+  },
+  {
+    "id": 67,
+    "name_mountain_part": "Bieszczady",
+    "label": "Czoło",
+    "typ_punktu": "góra",
+    "height": 1159
+  },
+  {
+    "id": 68,
+    "name_mountain_part": "Bieszczady",
+    "label": "Borsuk",
+    "typ_punktu": "góra",
+    "height": 991
+  },
+  {
+    "id": 69,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz pod Czerteżem",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 70,
+    "name_mountain_part": "Bieszczady",
+    "label": "Czerteż",
+    "typ_punktu": "góra",
+    "height": 1072
+  },
+  {
+    "id": 71,
+    "name_mountain_part": "Bieszczady",
+    "label": "Hrubki",
+    "typ_punktu": "góra",
+    "height": 1186
+  },
+  {
+    "id": 72,
+    "name_mountain_part": "Bieszczady",
+    "label": "Kamienna",
+    "typ_punktu": "góra",
+    "height": 1201
+  },
+  {
+    "id": 73,
+    "name_mountain_part": "Bieszczady",
+    "label": "Trójstyk pod Krzemieńcem",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 74,
+    "name_mountain_part": "Bieszczady",
+    "label": "Krzemieniec",
+    "typ_punktu": "góra",
+    "height": 1221
+  },
+  {
+    "id": 75,
+    "name_mountain_part": "Bieszczady",
+    "label": "Wielka Rawka",
+    "typ_punktu": "góra",
+    "height": 1304
+  },
+  {
+    "id": 76,
+    "name_mountain_part": "Bieszczady",
+    "label": "Ustrzyki Górne",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 77,
+    "name_mountain_part": "Bieszczady",
+    "label": "Wołosate",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 78,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz pod Tarnicą",
+    "typ_punktu": "przełęcz",
+    "height": 1275
+  },
+  {
+    "id": 79,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz Goprowska",
+    "typ_punktu": "przełęcz",
+    "height": 1160
+  },
+  {
+    "id": 80,
+    "name_mountain_part": "Bieszczady",
+    "label": "Krzemień",
+    "typ_punktu": "góra",
+    "height": 1335
+  },
+  {
+    "id": 81,
+    "name_mountain_part": "Bieszczady",
+    "label": "Bukowe Berdo",
+    "typ_punktu": "góra",
+    "height": 1311
+  },
+  {
+    "id": 82,
+    "name_mountain_part": "Bieszczady",
+    "label": "Szołtynia",
+    "typ_punktu": "góra",
+    "height": 1201
+  },
+  {
+    "id": 83,
+    "name_mountain_part": "Bieszczady",
+    "label": "Widełki (Pszczeliny)",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 84,
+    "name_mountain_part": "Bieszczady",
+    "label": "Magura Stuposiańska",
+    "typ_punktu": "góra",
+    "height": 1016
+  },
+  {
+    "id": 85,
+    "name_mountain_part": "Bieszczady",
+    "label": "Dwernik",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 86,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Chata Socjologa (Otryt)",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 87,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Otryt Wyżny",
+    "typ_punktu": "góra",
+    "height": 898
+  },
+  {
+    "id": 88,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Polana",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 89,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Łabiska",
+    "typ_punktu": "góra",
+    "height": 618
+  },
+  {
+    "id": 90,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Pod Krzyżem",
+    "typ_punktu": "góra",
+    "height": 495
+  },
+  {
+    "id": 91,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Chrewt",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 92,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Teleśnica Oszwarowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 93,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Daszówka",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 94,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Zawał",
+    "typ_punktu": "góra",
+    "height": 768
+  },
+  {
+    "id": 95,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Żuków",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 96,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Równia",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 97,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Gromadzyń",
+    "typ_punktu": "góra",
+    "height": 654
+  },
+  {
+    "id": 98,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Ustrzyki Dolne",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 99,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Kamienna Laworta",
+    "typ_punktu": "góra",
+    "height": 769
+  },
+  {
+    "id": 100,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Dźwiniacz Dolny",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 101,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Mosty",
+    "typ_punktu": "góra",
+    "height": 640
+  },
+  {
+    "id": 102,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Przełęcz Wolańska",
+    "typ_punktu": "przełęcz",
+    "height": 536
+  },
+  {
+    "id": 103,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Wola Maćkowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 104,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Brańcowa",
+    "typ_punktu": "góra",
+    "height": 677
+  },
+  {
+    "id": 105,
+    "name_mountain_part": "Góry Sanocko-Turczańskie",
+    "label": "Przełęcz pod Brańcową",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 106,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Kwaszenina",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 107,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Jureczkowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 108,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Pasmo Jamnej",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 109,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Arłamów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 110,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Żytne",
+    "typ_punktu": "góra",
+    "height": 503
+  },
+  {
+    "id": 111,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Suchy Obycz",
+    "typ_punktu": "góra",
+    "height": 618
+  },
+  {
+    "id": 112,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Kalwaria Pacławska",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 113,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Huwniki",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 114,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Gruszowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 115,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Koniusza",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 116,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Szybenica",
+    "typ_punktu": "góra",
+    "height": 496
+  },
+  {
+    "id": 117,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Wapielnica",
+    "typ_punktu": "góra",
+    "height": 394
+  },
+  {
+    "id": 118,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Kruhel Wielki",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 119,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Dybawka",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 120,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Krasiczyn",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 121,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Korytniki",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 122,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Krasice",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 123,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Olszany",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 124,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Krzeczkowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 125,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Krzeczkowski Mur",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 126,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Huta Brzuska",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 127,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Sufczyna",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 128,
+    "name_mountain_part": "Pogórze Przemyskie",
+    "label": "Piątkowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 129,
+    "name_mountain_part": "Pogórze Dynowskie",
+    "label": "Łysa Góra",
+    "typ_punktu": "góra",
+    "height": 430
+  },
+  {
+    "id": 130,
+    "name_mountain_part": "Pogórze Dynowskie",
+    "label": "Dynów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 131,
+    "name_mountain_part": "Pogórze Dynowskie",
+    "label": "Bachórz",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 132,
+    "name_mountain_part": "Pogórze Dynowskie",
+    "label": "Błażowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 133,
+    "name_mountain_part": "Pogórze Dynowskie",
+    "label": "Przylasek",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 134,
+    "name_mountain_part": "Pogórze Dynowskie",
+    "label": "Rzeszów",
+    "typ_punktu": "miasto"
+  }
+]

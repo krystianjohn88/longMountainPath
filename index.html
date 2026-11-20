@@ -2,24 +2,38 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <meta name="theme-color" content="#1f5130">
-  <title>GSB – nauka trasy</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Szlaki długodystansowe Beskidów</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Ekran startowy: wybór zakresu nauki -->
   <section id="screen-start" class="screen active">
+    <p class="app-name">Szlaki długodystansowe Beskidów</p>
+    <div id="trails" class="trails" role="group" aria-label="Szlak"></div>
+
     <header class="hero">
-      <h1>GSB</h1>
-      <p>Główny Szlak Beskidzki – wpisuj kolejne punkty trasy</p>
+      <h1 id="trail-short">…</h1>
+      <p id="trail-name"></p>
     </header>
 
     <div class="direction">
       <span>Kierunek:</span>
-      <button id="dir-toggle" class="pill" type="button">Ustroń → Wołosate</button>
+      <button id="dir-toggle" class="pill" type="button">…</button>
+    </div>
+
+    <div class="setting">
+      <label for="threshold">Akceptuj od <strong id="threshold-value">80%</strong> zgodności</label>
+      <input id="threshold" type="range" min="50" max="100" step="5" value="80">
+      <small>100% = tylko dokładna nazwa (bez polskich znaków też się liczy)</small>
     </div>
 
     <button id="start-all" class="btn primary big" type="button">Cały szlak od początku</button>
@@ -29,7 +43,7 @@
   </section>
 
   <!-- Ekran nauki -->
-  <section id="screen-quiz" class="screen">
+  <section id="screen-quiz" class="screen quiz">
     <header class="bar">
       <button id="back" class="icon-btn" type="button" aria-label="Wróć">←</button>
       <div class="bar-title">
@@ -42,9 +56,10 @@
     <ol id="done" class="done"></ol>
 
     <form id="answer-form" class="answer" autocomplete="off">
+      <p id="feedback" class="feedback" aria-live="polite"></p>
       <p id="hint" class="hint"></p>
       <input id="answer" type="text" placeholder="Następny punkt…" enterkeyhint="go"
-             autocapitalize="words" spellcheck="false">
+             autocapitalize="words" autocorrect="off" spellcheck="false">
       <div class="actions">
         <button id="btn-hint" class="btn" type="button">Podpowiedź</button>
         <button id="btn-reveal" class="btn" type="button">Pokaż</button>

@@ -1,0 +1,4 @@
+[
+  { "id": "gsb", "name": "Główny Szlak Beskidzki", "short": "GSB", "color": "#c0392b", "file": "gsb.json" },
+  { "id": "nsk", "name": "Niebieski Szlak Karpacki", "short": "NSK", "color": "#2463b8", "file": "nsk.json" }
+]

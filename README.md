@@ -1,25 +1,38 @@
-# longMountainPath
+# longMountainPath – Szlaki długodystansowe Beskidów
 
-Nauka kolejnych punktów Głównego Szlaku Beskidzkiego (Ustroń → Wołosate).
-Wpisujesz po kolei nazwy punktów: cały szlak od początku albo wybrane pasmo.
+Nauka kolejnych punktów szlaków górskich: wpisujesz po kolei nazwy punktów – cały szlak albo wybrany region,
+w obu kierunkach.
+
+- **GSB** – Główny Szlak Beskidzki (Ustroń ↔ Wołosate)
+- **NSK** – Niebieski Szlak Karpacki (Grybów ↔ Rzeszów)
 
 **Uruchom w przeglądarce:** https://krystianjohn88.github.io/longMountainPath/
 
 Strona statyczna w czystym JS, bez serwera i bez zależności. Działa na GitHub Pages.
 
-## Dane – `points.json`
+## Dane – `data/`
 
-Tablica punktów w kolejności szlaku (wg `id`):
+- `trails.json` – lista szlaków: `id`, `name`, `short`, `color` (kolor znakowania), `file`
+- `gsb.json`, `nsk.json` – punkty szlaku w kolejności (wg `id`):
 
 ```json
-{ "id": 1, "name_mountain_part": "Beskid Śląski", "label": "Ustroń", "typ_punktu": "miasto" }
+{ "id": 1, "name_mountain_part": "Beskid Niski", "label": "Chełm", "typ_punktu": "góra", "height": 778 }
 ```
 
 `typ_punktu`: `góra` | `przełęcz` | `schronisko` | `miasto` | `polana` | `inne`.
+`height` (m n.p.m.) jest opcjonalne – pokazuje się w podpowiedzi.
 
-Przy sprawdzaniu nie liczą się polskie znaki, wielkość liter ani myślniki. Przedrostki „Przełęcz”, „Hala”, „Schronisko” można pominąć,
-a nazwę z dopiskiem w nawiasie można wpisać bez nawiasu albo samym dopiskiem.
+Nowy szlak = nowy plik z punktami + wpis w `trails.json`. Kierunek „od–do” bierze się z pierwszego i ostatniego punktu.
+
+## Sprawdzanie odpowiedzi
+
+Nie liczą się polskie znaki, wielkość liter ani myślniki. Przedrostki „Przełęcz”, „Hala”, „Schronisko PTTK”,
+„Stacja Turystyczna” można pominąć, a nazwę z dopiskiem w nawiasie można wpisać bez nawiasu albo samym dopiskiem.
+
+**Zgodność odpowiedzi:** aplikacja liczy, w ilu procentach wpisana nazwa zgadza się z poprawną (odległość Levenshteina)
+i pokazuje ten wynik. Odpowiedź jest zaliczana od 80% – próg można zmienić suwakiem na ekranie startowym
+(50–100%, zapamiętywany w przeglądarce).
 
 ## Lokalnie
 
-Dowolny serwer statyczny, np. `npx serve .` albo `python -m http.server`. Bezpośrednie otwarcie pliku nie zadziała, bo `fetch` nie wczyta wtedy `points.json`.
+Dowolny serwer statyczny, np. `npx serve .`. Bezpośrednie otwarcie pliku nie zadziała, bo `fetch` nie wczyta wtedy danych.
