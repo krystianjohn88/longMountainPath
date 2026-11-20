@@ -231,7 +231,18 @@ h2 { font-size: 1rem; color: var(--muted); font-weight: 500; margin: 12px 0 0; }
   cursor: pointer;
 }
 .mode[aria-pressed="true"] { border-color: var(--accent); font-weight: 600; }
-.order-info { margin: 0; color: var(--muted); font-size: .9rem; }
+.order-info { margin: 0; gap: 8px; }
+.order-info small { color: var(--muted); font-size: .85rem; }
+
+/* Liczba klocków naraz: − 8 + */
+.stepper { display: flex; align-items: center; gap: 10px; }
+.stepper span { flex: 1; }
+.stepper strong { min-width: 2ch; text-align: center; font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+.stepper .icon-btn:disabled { opacity: .4; cursor: default; }
+.stepper.compact { justify-content: flex-end; color: var(--muted); font-size: .9rem; gap: 8px; }
+.stepper.compact span { flex: 0 1 auto; }
+.stepper.compact .icon-btn { width: 40px; height: 40px; min-height: 40px; }
+.slots li.prev { border: 0; background: transparent; color: var(--muted); min-height: 32px; padding-top: 2px; padding-bottom: 2px; }
 
 /* Układanie: ponumerowane miejsca u góry, klocki na dole */
 .slots {

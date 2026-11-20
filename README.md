@@ -30,7 +30,7 @@ Nowy szlak = nowy plik z punktami + wpis w `trails.json`. Kierunek „od–do”
 ## Tryby nauki
 
 - **✍️ Wpisywanie**: wpisujesz kolejne punkty (cały szlak albo pasmo).
-- **🧩 Układanie**: tylko dla pasm. Na dole są wymieszane klocki z nazwami – dotykasz je w kolejności szlaku. Każdy jest od razu sprawdzany: dobry trafia na swoje miejsce (zielony), zły miga na czerwono i liczy się jako pomyłka.
+- **🧩 Układanie**: tylko dla pasm. Układasz etapami po kilka punktów (domyślnie 8, zmiana przyciskami −/+ od 3 do 20): na dole wymieszane klocki z nazwami, dotykasz je w kolejności szlaku. Każdy jest od razu sprawdzany – dobry trafia na swoje miejsce (zielony), zły miga na czerwono i liczy się jako pomyłka. Po ułożeniu etapu pojawiają się kolejne klocki.
 
 ## Sprawdzanie odpowiedzi
 

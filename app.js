@@ -486,9 +486,46 @@ function finish() {
 }
 
 // --- układanie klocków --------------------------------------------------------------
-// Na górze ponumerowane miejsca, na dole wymieszane klocki. Dotknięcie klocka od razu
-// sprawdza, czy to następny punkt: dobry ląduje na swoim miejscu (zielony),
-// zły miga na czerwono i zostaje na dole.
+// Pasmo układa się etapami po N punktów (domyślnie 8, zmiana przyciskami −/+).
+// Na górze ostatni ułożony punkt (dla ciągłości) i N pustych miejsc, na dole N wymieszanych
+// klocków. Dotknięcie klocka od razu sprawdza, czy to następny punkt: dobry ląduje na swoim
+// miejscu (zielony), zły miga na czerwono i zostaje na dole. Po ułożeniu etapu pojawiają się
+// kolejne klocki.
+
+const BATCH_KEY = 'gsb.batch';
+const BATCH_MIN = 3;
+const BATCH_MAX = 20;
+const BATCH_DEFAULT = 8;
+
+function loadBatchSize() {
+  try {
+    const v = Number(localStorage.getItem(BATCH_KEY));
+    if (v >= BATCH_MIN && v <= BATCH_MAX) return v;
+  } catch {}
+  return BATCH_DEFAULT;
+}
+
+state.batchSize = loadBatchSize();
+
+function renderBatchSize() {
+  document.querySelectorAll('.batch-value').forEach((el) => { el.textContent = state.batchSize; });
+  document.querySelectorAll('.batch-dec').forEach((b) => { b.disabled = state.batchSize <= BATCH_MIN; });
+  document.querySelectorAll('.batch-inc').forEach((b) => { b.disabled = state.batchSize >= BATCH_MAX; });
+}
+
+function changeBatchSize(delta) {
+  state.batchSize = Math.min(BATCH_MAX, Math.max(BATCH_MIN, state.batchSize + delta));
+  try { localStorage.setItem(BATCH_KEY, String(state.batchSize)); } catch {}
+  renderBatchSize();
+  // W trakcie układania: nowy rozmiar od razu – etap zaczyna się od następnego punktu.
+  if (state.order && $('screen-order').classList.contains('active')) {
+    startBatch();
+    renderOrder();
+  }
+}
+
+document.querySelectorAll('.batch-dec').forEach((b) => b.addEventListener('click', () => changeBatchSize(-1)));
+document.querySelectorAll('.batch-inc').forEach((b) => b.addEventListener('click', () => changeBatchSize(1)));
 
 function shuffle(items) {
   const a = items.slice();
@@ -499,24 +536,35 @@ function shuffle(items) {
   return a;
 }
 
+// Nowy etap od punktu o.next: N miejsc i N wymieszanych klocków.
+function startBatch() {
+  const o = state.order;
+  o.batchStart = o.next;
+  o.batchEnd = Math.min(o.expected.length, o.next + state.batchSize);
+  const batch = o.expected.slice(o.batchStart, o.batchEnd);
+  const tiles = batch.map((p, i) => ({ key: o.batchStart + i, label: p.label }));
+  let pool = shuffle(tiles);
+  // Przy kilku klockach losowanie może dać od razu dobrą kolejność – mieszamy ponownie.
+  for (let n = 0; n < 5 && pool.length > 1 && pool.every((t, i) => t.label === batch[i].label); n++) {
+    pool = shuffle(tiles);
+  }
+  o.pool = pool;
+}
+
 async function startOrder(part) {
   const points = await getPoints(part);
   if (state.reversed) points.reverse();
-  const tiles = points.map((p, i) => ({ key: i, label: p.label }));
-  let pool = shuffle(tiles);
-  // Przy kilku punktach losowanie może dać od razu dobrą kolejność – mieszamy ponownie.
-  for (let n = 0; n < 5 && pool.length > 1 && pool.every((t, i) => t.label === points[i].label); n++) {
-    pool = shuffle(tiles);
-  }
   state.part = part;
   state.lastMode = 'order';
   state.order = {
     expected: points,
-    slots: Array(points.length).fill(null),
-    next: 0,          // indeks następnego miejsca do wypełnienia
-    pool,
+    next: 0,          // indeks następnego punktu do ułożenia (w całym paśmie)
+    batchStart: 0,
+    batchEnd: 0,
+    pool: [],
     mistakes: 0,
   };
+  startBatch();
   $('order-title').textContent = `${state.trail.short} · ${part} · układanie`;
   setOrderFeedback('Dotknij klocka, który jest następny na szlaku', '');
   show('order');
@@ -529,24 +577,36 @@ function setOrderFeedback(text, kind) {
   el.className = `feedback ${kind}`;
 }
 
+function slotItem(nrText, labelText, cls) {
+  const li = document.createElement('li');
+  const nr = document.createElement('span');
+  nr.className = 'nr';
+  nr.textContent = nrText;
+  const label = document.createElement('span');
+  label.className = 'label';
+  label.textContent = labelText;
+  li.append(nr, label);
+  li.className = cls;
+  return li;
+}
+
 function renderOrder() {
   const o = state.order;
-  $('order-progress').textContent = `Ułożone: ${o.next} / ${o.slots.length} · pomyłki: ${o.mistakes}`;
+  const total = o.expected.length;
+  $('order-progress').textContent = `Ułożone: ${o.next} / ${total} · pomyłki: ${o.mistakes}`;
 
   const slots = $('slots');
   slots.innerHTML = '';
-  o.slots.forEach((tile, i) => {
-    const li = document.createElement('li');
-    const nr = document.createElement('span');
-    nr.className = 'nr';
-    nr.textContent = i + 1;
-    const label = document.createElement('span');
-    label.className = 'label';
-    label.textContent = tile ? tile.label : '';
-    li.append(nr, label);
-    li.className = tile ? 'locked' : (i === o.next ? 'empty next' : 'empty');
-    slots.appendChild(li);
-  });
+  // Ostatni punkt poprzedniego etapu – żeby było wiadomo, od czego układamy dalej.
+  if (o.batchStart > 0) {
+    const prev = o.expected[o.batchStart - 1];
+    slots.appendChild(slotItem(o.batchStart, prev.label, 'prev'));
+  }
+  for (let i = o.batchStart; i < o.batchEnd; i++) {
+    const done = i < o.next;
+    const cls = done ? 'locked' : (i === o.next ? 'empty next' : 'empty');
+    slots.appendChild(slotItem(i + 1, done ? o.expected[i].label : '', cls));
+  }
 
   const pool = $('pool');
   pool.innerHTML = '';
@@ -560,8 +620,7 @@ function renderOrder() {
   }
   pool.hidden = o.pool.length === 0;
 
-  // Następne wolne miejsce zawsze widoczne nad klockami.
-  const next = slots.children[o.next];
+  const next = slots.querySelector('.next');
   if (next) next.scrollIntoView({ block: 'nearest' });
 }
 
@@ -572,26 +631,44 @@ function place(tile, button) {
   if (tile.label !== expected.label) {
     o.mistakes++;
     setOrderFeedback(`✗ „${tile.label}” to nie ten punkt`, 'bad');
-    $('order-progress').textContent = `Ułożone: ${o.next} / ${o.slots.length} · pomyłki: ${o.mistakes}`;
+    $('order-progress').textContent = `Ułożone: ${o.next} / ${o.expected.length} · pomyłki: ${o.mistakes}`;
     button.classList.remove('wrong');
     void button.offsetWidth; // restart animacji
     button.classList.add('wrong');
     return;
   }
-  o.slots[o.next] = tile;
   o.next++;
   o.pool = o.pool.filter((t) => t !== tile);
+
+  if (o.next === o.expected.length) {
+    setOrderFeedback(`✓ ${tile.label}`, 'ok');
+    renderOrder();
+    return setTimeout(finishOrder, 500);
+  }
+  if (o.next === o.batchEnd) {
+    // Etap ułożony – chwila na zobaczenie całości, potem kolejne klocki.
+    setOrderFeedback(`✓ ${tile.label} – etap ułożony, kolejne klocki…`, 'ok');
+    renderOrder();
+    const batchEnd = o.batchEnd;
+    return setTimeout(() => {
+      if (state.order !== o || o.batchEnd !== batchEnd) return;
+      startBatch();
+      setOrderFeedback('Dotknij klocka, który jest następny na szlaku', '');
+      renderOrder();
+    }, 900);
+  }
   setOrderFeedback(`✓ ${tile.label}`, 'ok');
   renderOrder();
-  if (o.next === o.slots.length) setTimeout(finishOrder, 500);
 }
 
 $('order-back').addEventListener('click', () => show('start'));
 
+renderBatchSize();
+
 function finishOrder() {
   const o = state.order;
   $('summary').textContent =
-    `Ułożone punkty: ${o.slots.length} · pomyłki: ${o.mistakes}`;
+    `Ułożone punkty: ${o.expected.length} · pomyłki: ${o.mistakes}`;
   show('end');
 }
 
