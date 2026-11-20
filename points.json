@@ -1,0 +1,1106 @@
+[
+  {
+    "id": 1,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Ustroń",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 2,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Gościniec Równica",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 3,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Czantoria Wielka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 4,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Soszów Wielki",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 5,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Stożek Mały",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 6,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Stożek",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 7,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Kiczory",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 8,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Przełęcz Kubalonka",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 9,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Przełęcz Szarcula",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 10,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Góra Szarcula",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 11,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Stecówka",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 12,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Schronisko PTTK Przysłop pod Baranią Górą",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 13,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Wierch Równiański",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 14,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Wierch Wisełka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 15,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Barania Góra",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 16,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Magurka Wiślańska",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 17,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Magurka Radziechowska",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 18,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Glinne",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 19,
+    "name_mountain_part": "Beskid Śląski",
+    "label": "Węgierska Górka",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 20,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Abrahamów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 21,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Stacja Turystyczna Abrahamów",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 22,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Stacja Turystyczna Słowianka",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 23,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Suchy Groń",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 24,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Przełęcz Pawlusia",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 25,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Schronisko PTTK na Rysiance",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 26,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Trzy Kopce",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 27,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Palenica",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 28,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Tanecznik",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 29,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Hala Cebulowa",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 30,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Hala Miziowa",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 31,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Przełęcz Glinne",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 32,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Student",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 33,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Beskid Korbielowski",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 34,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Beskid Krzyżowski",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 35,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Jaworzyna",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 36,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Przełęcz Głuchaczki",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 37,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Medralowa Zachodnia",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 38,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Medralowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 39,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Przełęcz Jałowiecka Północna (Tabakowe Siodło)",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 40,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Jałowcowy Garb",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 41,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Przełęcz Jałowiecka Południowa",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 42,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Markowe Szczawiny",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 43,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Diablak",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 44,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Głowniak",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 45,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Kępa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 46,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Sokolica",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 47,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Przełęcz Krowiarki",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 48,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Syhlec",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 49,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Główniak",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 50,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Brożki",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 51,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Cyl Hali Śmietanowej",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 52,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Polica",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 53,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Złota Grapa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 54,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Hala Krupowa",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 55,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Okrąglica",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 56,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Urwanica",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 57,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Krupówka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 58,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Judaszka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 59,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Bystra Podhalańska",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 60,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Jordanów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 61,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Wysoka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 62,
+    "name_mountain_part": "Beskid Żywiecki",
+    "label": "Piłatowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 63,
+    "name_mountain_part": "Gorce",
+    "label": "Rabka-Zdrój",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 64,
+    "name_mountain_part": "Gorce",
+    "label": "Maciejowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 65,
+    "name_mountain_part": "Gorce",
+    "label": "Przełęcz Pośrednie",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 66,
+    "name_mountain_part": "Gorce",
+    "label": "Schronisko PTTK Stare Wierchy",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 67,
+    "name_mountain_part": "Gorce",
+    "label": "Polana Pudziska",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 68,
+    "name_mountain_part": "Gorce",
+    "label": "Obidowiec",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 69,
+    "name_mountain_part": "Gorce",
+    "label": "Rozdziele",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 70,
+    "name_mountain_part": "Gorce",
+    "label": "Turbacz",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 71,
+    "name_mountain_part": "Gorce",
+    "label": "Schronisko PTTK Turbacz",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 72,
+    "name_mountain_part": "Gorce",
+    "label": "Polana Długa",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 73,
+    "name_mountain_part": "Gorce",
+    "label": "Polana Gabrowska",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 74,
+    "name_mountain_part": "Gorce",
+    "label": "Kiczora",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 75,
+    "name_mountain_part": "Gorce",
+    "label": "Hala Młyńska",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 76,
+    "name_mountain_part": "Gorce",
+    "label": "Polana Zielenica",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 77,
+    "name_mountain_part": "Gorce",
+    "label": "Bukowina Harklowska",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 78,
+    "name_mountain_part": "Gorce",
+    "label": "Czerteż",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 79,
+    "name_mountain_part": "Gorce",
+    "label": "Przełęcz Knurowska",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 80,
+    "name_mountain_part": "Gorce",
+    "label": "Studzionki",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 81,
+    "name_mountain_part": "Gorce",
+    "label": "Pod Kotelnicą",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 82,
+    "name_mountain_part": "Gorce",
+    "label": "Runek",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 83,
+    "name_mountain_part": "Gorce",
+    "label": "Polana Kudów",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 84,
+    "name_mountain_part": "Gorce",
+    "label": "Lubań",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 85,
+    "name_mountain_part": "Gorce",
+    "label": "Średni Groń",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 86,
+    "name_mountain_part": "Gorce",
+    "label": "Marszałek",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 87,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Krościenko nad Dunajcem",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 88,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Dzwonkówka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 89,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Przełęcz Przysłop",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 90,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Schronisko PTTK Przehyba",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 91,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Wielka Przehyba",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 92,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Radziejowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 93,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Wielki Rogacz",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 94,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Niemcowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 95,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Rytro",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 96,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Schronisko Cyrla",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 97,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Rozdroże pod Makowicą",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 98,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Hala Pisana",
+    "typ_punktu": "polana"
+  },
+  {
+    "id": 99,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Wierch nad Kamieniem",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 100,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Hala Łabowska",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 101,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Runek",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 102,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Jaworzyna Krynicka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 103,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Krynica-Zdrój",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 104,
+    "name_mountain_part": "Beskid Sądecki",
+    "label": "Huzary",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 105,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Mochniaczka",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 106,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Banica",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 107,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Izby",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 108,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Ropki",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 109,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Hańczowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 110,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kozie Żebro",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 111,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Regietów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 112,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Rotunda",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 113,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Ług",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 114,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Popowe Wierchy",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 115,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Krzywa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 116,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Wołowiec",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 117,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Bartne",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 118,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Majdan",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 119,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Wątkowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 120,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Świerzowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 121,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Ostrysz",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 122,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kolanin",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 123,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz Hałbowska",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 124,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kamień nad Kątami",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 125,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kąty",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 126,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Grzywacka Góra",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 127,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Łysa Góra",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 128,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Polana",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 129,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Dania",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 130,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Chyrowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 131,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kamienna Góra",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 132,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Garb",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 133,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Nowa Wieś",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 134,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Cergowa",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 135,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Lubatowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 136,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Iwonicz-Zdrój",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 137,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Rymanów-Zdrój",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 138,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Wołtuszowa",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 139,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Wisłoczek",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 140,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Puławy Dolne",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 141,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Puławy Górne",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 142,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Pasmo Bukowicy",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 143,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Smokowiska",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 144,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przełęcz pod Tokarnią",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 145,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Tokarnia",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 146,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Przybyszów",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 147,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Kamień nad Rzepedką",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 148,
+    "name_mountain_part": "Beskid Niski",
+    "label": "Wahalowski Wierch",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 149,
+    "name_mountain_part": "Bieszczady",
+    "label": "Komańcza",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 150,
+    "name_mountain_part": "Bieszczady",
+    "label": "Prełuki",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 151,
+    "name_mountain_part": "Bieszczady",
+    "label": "Duszatyn",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 152,
+    "name_mountain_part": "Bieszczady",
+    "label": "Jeziorka Duszatyńskie",
+    "typ_punktu": "inne"
+  },
+  {
+    "id": 153,
+    "name_mountain_part": "Bieszczady",
+    "label": "Chryszczata",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 154,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz Żebrak",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 155,
+    "name_mountain_part": "Bieszczady",
+    "label": "Jaworne",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 156,
+    "name_mountain_part": "Bieszczady",
+    "label": "Wołosań",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 157,
+    "name_mountain_part": "Bieszczady",
+    "label": "Cisna",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 158,
+    "name_mountain_part": "Bieszczady",
+    "label": "Małe Jasło",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 159,
+    "name_mountain_part": "Bieszczady",
+    "label": "Szczawnik",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 160,
+    "name_mountain_part": "Bieszczady",
+    "label": "Duże Jasło",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 161,
+    "name_mountain_part": "Bieszczady",
+    "label": "Okrąglik",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 162,
+    "name_mountain_part": "Bieszczady",
+    "label": "Fereczata",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 163,
+    "name_mountain_part": "Bieszczady",
+    "label": "Smerek",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 164,
+    "name_mountain_part": "Bieszczady",
+    "label": "Kalnica",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 165,
+    "name_mountain_part": "Bieszczady",
+    "label": "Smerek",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 166,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz Orłowicza",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 167,
+    "name_mountain_part": "Bieszczady",
+    "label": "Połonina Wetlińska",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 168,
+    "name_mountain_part": "Bieszczady",
+    "label": "Szare Berdo",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 169,
+    "name_mountain_part": "Bieszczady",
+    "label": "Osadzki Wierch",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 170,
+    "name_mountain_part": "Bieszczady",
+    "label": "Roh",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 171,
+    "name_mountain_part": "Bieszczady",
+    "label": "Chatka Puchatka (Hasiakowa Skała)",
+    "typ_punktu": "schronisko"
+  },
+  {
+    "id": 172,
+    "name_mountain_part": "Bieszczady",
+    "label": "Brzegi Górne",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 173,
+    "name_mountain_part": "Bieszczady",
+    "label": "Połonina Caryńska",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 174,
+    "name_mountain_part": "Bieszczady",
+    "label": "Kruhly Wierch",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 175,
+    "name_mountain_part": "Bieszczady",
+    "label": "Ustrzyki Górne",
+    "typ_punktu": "miasto"
+  },
+  {
+    "id": 176,
+    "name_mountain_part": "Bieszczady",
+    "label": "Szeroki Wierch",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 177,
+    "name_mountain_part": "Bieszczady",
+    "label": "Tarniczka",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 178,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz pod Tarnicą",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 179,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz Goprowska",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 180,
+    "name_mountain_part": "Bieszczady",
+    "label": "Krzemieniec",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 181,
+    "name_mountain_part": "Bieszczady",
+    "label": "Halicz",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 182,
+    "name_mountain_part": "Bieszczady",
+    "label": "Rozsypaniec",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 183,
+    "name_mountain_part": "Bieszczady",
+    "label": "Przełęcz Bukowska",
+    "typ_punktu": "przełęcz"
+  },
+  {
+    "id": 184,
+    "name_mountain_part": "Bieszczady",
+    "label": "Wołosate",
+    "typ_punktu": "miasto"
+  }
+]

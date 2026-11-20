@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f5130">
+  <title>GSB – nauka trasy</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ekran startowy: wybór zakresu nauki -->
+  <section id="screen-start" class="screen active">
+    <header class="hero">
+      <h1>GSB</h1>
+      <p>Główny Szlak Beskidzki – wpisuj kolejne punkty trasy</p>
+    </header>
+
+    <div class="direction">
+      <span>Kierunek:</span>
+      <button id="dir-toggle" class="pill" type="button">Ustroń → Wołosate</button>
+    </div>
+
+    <button id="start-all" class="btn primary big" type="button">Cały szlak od początku</button>
+
+    <h2>…albo wybierz pasmo</h2>
+    <ul id="parts" class="parts"></ul>
+  </section>
+
+  <!-- Ekran nauki -->
+  <section id="screen-quiz" class="screen">
+    <header class="bar">
+      <button id="back" class="icon-btn" type="button" aria-label="Wróć">←</button>
+      <div class="bar-title">
+        <strong id="quiz-title"></strong>
+        <span id="quiz-progress"></span>
+      </div>
+    </header>
+    <div class="progress"><div id="progress-fill"></div></div>
+
+    <ol id="done" class="done"></ol>
+
+    <form id="answer-form" class="answer" autocomplete="off">
+      <p id="hint" class="hint"></p>
+      <input id="answer" type="text" placeholder="Następny punkt…" enterkeyhint="go"
+             autocapitalize="words" spellcheck="false">
+      <div class="actions">
+        <button id="btn-hint" class="btn" type="button">Podpowiedź</button>
+        <button id="btn-reveal" class="btn" type="button">Pokaż</button>
+        <button class="btn primary" type="submit">Sprawdź</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Podsumowanie -->
+  <section id="screen-end" class="screen">
+    <header class="hero">
+      <h1>Koniec!</h1>
+      <p id="summary"></p>
+    </header>
+    <button id="again" class="btn primary big" type="button">Jeszcze raz</button>
+    <button id="home" class="btn big" type="button">Menu</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
