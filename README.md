@@ -37,3 +37,6 @@ i pokazuje ten wynik. Odpowiedź jest zaliczana od 80% – próg można zmienić
 ## Lokalnie
 
 Dowolny serwer statyczny, np. `npx serve .`. Bezpośrednie otwarcie pliku nie zadziała, bo `fetch` nie wczyta wtedy danych.
+
+
+Po każdej zmianie `app.js` lub `styles.css` podbij numer `?v=` w `index.html` – inaczej przeglądarka może przez kilka minut łączyć nową stronę ze starym skryptem z pamięci podręcznej.
