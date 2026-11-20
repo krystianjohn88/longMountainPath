@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Bielsko-Biała (Straconka)",
+    "typ_punktu": "miasto",
+    "height": 430
+  },
+  {
+    "id": 2,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Gaiki",
+    "typ_punktu": "góra",
+    "height": 808
+  },
+  {
+    "id": 3,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Przełęcz U Panienki",
+    "typ_punktu": "przełęcz",
+    "height": 710
+  },
+  {
+    "id": 4,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Chrobacza Łąka",
+    "typ_punktu": "góra",
+    "height": 828
+  },
+  {
+    "id": 5,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Zapora Porąbka",
+    "typ_punktu": "inne",
+    "height": 320
+  },
+  {
+    "id": 6,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Żar",
+    "typ_punktu": "góra",
+    "height": 761
+  },
+  {
+    "id": 7,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Zbiornik wody Żar",
+    "typ_punktu": "inne",
+    "height": 700
+  },
+  {
+    "id": 8,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Kiczera",
+    "typ_punktu": "góra",
+    "height": 827
+  },
+  {
+    "id": 9,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Przysłop Cisowy",
+    "typ_punktu": "przełęcz",
+    "height": 795
+  },
+  {
+    "id": 10,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Przełęcz Kocierska",
+    "typ_punktu": "przełęcz",
+    "height": 756
+  },
+  {
+    "id": 11,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Potrójna",
+    "typ_punktu": "góra",
+    "height": 884
+  },
+  {
+    "id": 12,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Łamana Skała",
+    "typ_punktu": "góra",
+    "height": 929
+  },
+  {
+    "id": 13,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Na Beskidzie",
+    "typ_punktu": "góra",
+    "height": 863
+  },
+  {
+    "id": 14,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Leskowiec",
+    "typ_punktu": "góra",
+    "height": 922
+  },
+  {
+    "id": 15,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Schronisko PTTK Leskowiec (Groń Jana Pawła II)",
+    "typ_punktu": "schronisko",
+    "height": 890
+  },
+  {
+    "id": 16,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Krzeszów Górny",
+    "typ_punktu": "miasto",
+    "height": 486
+  },
+  {
+    "id": 17,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Żurawnica",
+    "typ_punktu": "góra",
+    "height": 727
+  },
+  {
+    "id": 18,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Gołuszkowa Góra",
+    "typ_punktu": "góra"
+  },
+  {
+    "id": 19,
+    "name_mountain_part": "Beskid Mały",
+    "label": "Zembrzyce",
+    "typ_punktu": "miasto",
+    "height": 302
+  },
+  {
+    "id": 20,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Chełm",
+    "typ_punktu": "góra",
+    "height": 603
+  },
+  {
+    "id": 21,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Chełm Wschodni",
+    "typ_punktu": "góra",
+    "height": 581
+  },
+  {
+    "id": 22,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Palcza",
+    "typ_punktu": "miasto",
+    "height": 473
+  },
+  {
+    "id": 23,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Harbutowice Końcówka",
+    "typ_punktu": "miasto",
+    "height": 495
+  },
+  {
+    "id": 24,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Babica Zachodnia",
+    "typ_punktu": "góra",
+    "height": 633
+  },
+  {
+    "id": 25,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Babica",
+    "typ_punktu": "góra",
+    "height": 727
+  },
+  {
+    "id": 26,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Trzebuńska Góra",
+    "typ_punktu": "góra",
+    "height": 625
+  },
+  {
+    "id": 27,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Sularzowa",
+    "typ_punktu": "góra",
+    "height": 617
+  },
+  {
+    "id": 28,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Myślenice",
+    "typ_punktu": "miasto",
+    "height": 285
+  },
+  {
+    "id": 29,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Myślenice (Zarabie)",
+    "typ_punktu": "miasto",
+    "height": 283
+  },
+  {
+    "id": 30,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Działek",
+    "typ_punktu": "góra",
+    "height": 622
+  },
+  {
+    "id": 31,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Schronisko PTTK na Kudłaczach",
+    "typ_punktu": "schronisko",
+    "height": 730
+  },
+  {
+    "id": 32,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Łysina",
+    "typ_punktu": "góra",
+    "height": 891
+  },
+  {
+    "id": 33,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Lubomir",
+    "typ_punktu": "góra",
+    "height": 904
+  },
+  {
+    "id": 34,
+    "name_mountain_part": "Beskid Makowski",
+    "label": "Przełęcz Jaworzyce",
+    "typ_punktu": "przełęcz",
+    "height": 579
+  },
+  {
+    "id": 35,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Wierzbanowska Góra",
+    "typ_punktu": "góra",
+    "height": 778
+  },
+  {
+    "id": 36,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Przełęcz Wielkie Drogi",
+    "typ_punktu": "przełęcz",
+    "height": 560
+  },
+  {
+    "id": 37,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Dzielec",
+    "typ_punktu": "góra",
+    "height": 649
+  },
+  {
+    "id": 38,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Kasina Wielka",
+    "typ_punktu": "miasto",
+    "height": 497
+  },
+  {
+    "id": 39,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Lubogoszcz",
+    "typ_punktu": "góra",
+    "height": 968
+  },
+  {
+    "id": 40,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Lubogoszcz Zachodni",
+    "typ_punktu": "góra",
+    "height": 935
+  },
+  {
+    "id": 41,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Mszana Dolna",
+    "typ_punktu": "miasto",
+    "height": 384
+  },
+  {
+    "id": 42,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Przełęcz Glisne",
+    "typ_punktu": "przełęcz",
+    "height": 634
+  },
+  {
+    "id": 43,
+    "name_mountain_part": "Beskid Wyspowy",
+    "label": "Luboń Wielki",
+    "typ_punktu": "góra",
+    "height": 1022
+  }
+]

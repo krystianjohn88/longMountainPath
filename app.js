@@ -197,9 +197,12 @@ function renderTrails() {
   $('trail-name').textContent = `${state.trail.name} – wpisuj kolejne punkty trasy`;
 }
 
+// Nazwa punktu bez dopisku w nawiasie – do krótkich nagłówków („Bielsko-Biała (Straconka)” → „Bielsko-Biała”).
+const shortLabel = (label) => label.replace(/\s*\([^)]*\)/, '');
+
 async function renderDirection() {
   const all = await loadPoints();
-  const ends = [all[0].label, all[all.length - 1].label];
+  const ends = [shortLabel(all[0].label), shortLabel(all[all.length - 1].label)];
   if (state.reversed) ends.reverse();
   $('dir-toggle').textContent = `${ends[0]} → ${ends[1]}`;
 }
@@ -246,6 +249,79 @@ $('dir-toggle').addEventListener('click', () => {
 });
 
 $('start-all').addEventListener('click', () => startQuiz(null));
+
+// --- lista punktów -------------------------------------------------------------
+
+async function showList() {
+  const points = await getPoints(null);
+  if (state.reversed) points.reverse();
+  const box = $('point-list');
+  box.innerHTML = '';
+
+  // Grupy = kolejne punkty z tego samego regionu (w wybranym kierunku).
+  let group = null;
+  points.forEach((p, i) => {
+    if (!group || group.name !== p.name_mountain_part) {
+      group = { name: p.name_mountain_part, el: document.createElement('section') };
+      group.el.className = 'group';
+      const head = document.createElement('div');
+      head.className = 'group-head';
+      const h = document.createElement('h3');
+      h.textContent = p.name_mountain_part;
+      const learn = document.createElement('button');
+      learn.type = 'button';
+      learn.className = 'pill small';
+      learn.textContent = 'Ucz się →';
+      const part = p.name_mountain_part;
+      learn.addEventListener('click', () => startQuiz(part));
+      head.append(h, learn);
+      group.list = document.createElement('ol');
+      group.el.append(head, group.list);
+      box.appendChild(group.el);
+    }
+    const li = document.createElement('li');
+    li.dataset.search = normalize(p.label);
+    const nr = document.createElement('span');
+    nr.className = 'nr';
+    nr.textContent = i + 1;
+    const ico = document.createElement('span');
+    ico.textContent = TYPE_ICON[p.typ_punktu] || '•';
+    const label = document.createElement('span');
+    label.className = 'label';
+    label.textContent = p.label;
+    const meta = document.createElement('small');
+    meta.textContent = p.height ? `${p.typ_punktu} · ${p.height} m` : p.typ_punktu;
+    li.append(nr, ico, label, meta);
+    group.list.appendChild(li);
+  });
+
+  const ends = [shortLabel(points[0].label), shortLabel(points[points.length - 1].label)];
+  $('list-title').textContent = `${state.trail.short} · ${ends[0]} → ${ends[1]}`;
+  $('list-search').value = '';
+  filterList();
+  show('list');
+}
+
+function filterList() {
+  const q = normalize($('list-search').value);
+  let visible = 0;
+  for (const g of $('point-list').querySelectorAll('.group')) {
+    let inGroup = 0;
+    for (const li of g.querySelectorAll('li')) {
+      const hit = !q || li.dataset.search.includes(q);
+      li.hidden = !hit;
+      if (hit) inGroup++;
+    }
+    g.hidden = inGroup === 0;
+    visible += inGroup;
+  }
+  const total = $('point-list').querySelectorAll('li').length;
+  $('list-count').textContent = q ? `${visible} z ${total} punktów` : `${total} punktów`;
+}
+
+$('browse').addEventListener('click', showList);
+$('list-search').addEventListener('input', filterList);
+$('list-back').addEventListener('click', () => show('start'));
 
 // --- nauka -------------------------------------------------------------------
 

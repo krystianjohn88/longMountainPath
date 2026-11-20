@@ -217,6 +217,47 @@ h2 { font-size: 1rem; color: var(--muted); font-weight: 500; margin: 12px 0 0; }
 
 .error { color: var(--bad); }
 
+/* Lista punktów */
+.list-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg);
+  display: grid;
+  gap: 8px;
+  margin: calc(-1 * max(var(--gutter), env(safe-area-inset-top))) 0 0;
+  padding: max(var(--gutter), env(safe-area-inset-top)) 0 8px;
+}
+#list-search {
+  font: inherit;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  width: 100%;
+}
+#list-search:focus { outline: none; border-color: var(--accent); }
+.point-list { display: grid; gap: 16px; }
+.group-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.group-head h3 { margin: 0; font-size: 1rem; color: var(--accent); }
+.pill.small { min-height: 36px; padding: 4px 12px; font-size: .85rem; white-space: nowrap; }
+.group ol { list-style: none; margin: 0; padding: 0; background: var(--card); border-radius: 12px; overflow: hidden; }
+.group li {
+  display: grid;
+  grid-template-columns: 2.2em 24px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 12px;
+  border-top: 1px solid var(--border);
+}
+.group li:first-child { border-top: 0; }
+.group li[hidden], .group[hidden] { display: none; }
+.group .nr { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.group .label { overflow-wrap: anywhere; }
+.group small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
+
 /* Wąskie telefony (np. 320–375px) */
 @media (max-width: 380px) {
   :root { --gutter: 12px; }

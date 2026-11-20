@@ -37,9 +37,26 @@
     </div>
 
     <button id="start-all" class="btn primary big" type="button">Cały szlak od początku</button>
+    <button id="browse" class="btn big" type="button">📋 Przeglądaj punkty</button>
 
     <h2>…albo wybierz pasmo</h2>
     <ul id="parts" class="parts"></ul>
+  </section>
+
+  <!-- Lista punktów szlaku -->
+  <section id="screen-list" class="screen list-screen">
+    <div class="list-head">
+      <header class="bar">
+        <button id="list-back" class="icon-btn" type="button" aria-label="Wróć">←</button>
+        <div class="bar-title">
+          <strong id="list-title"></strong>
+          <span id="list-count"></span>
+        </div>
+      </header>
+      <input id="list-search" type="search" placeholder="Szukaj punktu…" autocomplete="off"
+             autocorrect="off" spellcheck="false" enterkeyhint="search">
+    </div>
+    <div id="point-list" class="point-list"></div>
   </section>
 
   <!-- Ekran nauki -->
