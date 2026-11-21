@@ -2,138 +2,22 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
-  <meta name="theme-color" content="#1f5130">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>Szlaki długodystansowe Beskidów</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.svg">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Szlaki długodystansowe Beskidów – przeniesione</title>
+  <meta http-equiv="refresh" content="0; url=https://szlaki.kj88.pl/">
+  <link rel="canonical" href="https://szlaki.kj88.pl/">
+  <script>location.replace('https://szlaki.kj88.pl/');</script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; box-sizing: border-box;
+           background: #f4f1ea; color: #1d2a22; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+           text-align: center; }
+    a { color: #1f5130; font-weight: 600; }
+  </style>
 </head>
 <body>
-  <!-- Ekran startowy: wybór zakresu nauki -->
-  <section id="screen-start" class="screen active">
-    <p class="app-name">Szlaki długodystansowe Beskidów</p>
-    <div id="trails" class="trails" role="group" aria-label="Szlak"></div>
-
-    <header class="hero">
-      <h1 id="trail-short">…</h1>
-      <p id="trail-name"></p>
-    </header>
-
-    <div class="direction">
-      <span>Kierunek:</span>
-      <button id="dir-toggle" class="pill" type="button">…</button>
-    </div>
-
-    <div class="modes" role="group" aria-label="Tryb nauki">
-      <button class="mode" type="button" data-mode="type">✍️ Wpisywanie</button>
-      <button class="mode" type="button" data-mode="order">🧩 Układanie</button>
-    </div>
-
-    <div id="threshold-setting" class="setting">
-      <label for="threshold">Akceptuj od <strong id="threshold-value">80%</strong> zgodności</label>
-      <input id="threshold" type="range" min="50" max="100" step="5" value="80">
-      <small>100% = tylko dokładna nazwa (bez polskich znaków też się liczy)</small>
-    </div>
-    <div id="order-info" class="setting order-info">
-      <div class="stepper">
-        <span>Klocków naraz</span>
-        <button class="icon-btn batch-dec" type="button" aria-label="Mniej klocków">−</button>
-        <strong class="batch-value">8</strong>
-        <button class="icon-btn batch-inc" type="button" aria-label="Więcej klocków">+</button>
-      </div>
-      <small>Dotykaj klocków z nazwami w kolejności szlaku – każdy jest od razu sprawdzany.
-        Po ułożeniu etapu pojawiają się kolejne. Tryb dostępny dla pojedynczych pasm.</small>
-    </div>
-
-    <button id="start-all" class="btn primary big" type="button">Cały szlak od początku</button>
-    <button id="browse" class="btn big" type="button">📋 Przeglądaj punkty</button>
-
-    <h2 id="parts-heading">…albo wybierz pasmo</h2>
-    <ul id="parts" class="parts"></ul>
-  </section>
-
-  <!-- Lista punktów szlaku -->
-  <section id="screen-list" class="screen list-screen">
-    <div class="list-head">
-      <header class="bar">
-        <button id="list-back" class="icon-btn" type="button" aria-label="Wróć">←</button>
-        <div class="bar-title">
-          <strong id="list-title"></strong>
-          <span id="list-count"></span>
-        </div>
-      </header>
-      <input id="list-search" type="search" placeholder="Szukaj punktu…" autocomplete="off"
-             autocorrect="off" spellcheck="false" enterkeyhint="search">
-    </div>
-    <div id="point-list" class="point-list"></div>
-  </section>
-
-  <!-- Ekran nauki -->
-  <section id="screen-quiz" class="screen quiz">
-    <header class="bar">
-      <button id="back" class="icon-btn" type="button" aria-label="Wróć">←</button>
-      <div class="bar-title">
-        <strong id="quiz-title"></strong>
-        <span id="quiz-progress"></span>
-      </div>
-    </header>
-    <div class="progress"><div id="progress-fill"></div></div>
-
-    <ol id="done" class="done"></ol>
-
-    <form id="answer-form" class="answer" autocomplete="off">
-      <p id="feedback" class="feedback" aria-live="polite"></p>
-      <p id="hint" class="hint"></p>
-      <input id="answer" type="text" placeholder="Następny punkt…" enterkeyhint="go"
-             autocapitalize="words" autocorrect="off" spellcheck="false">
-      <div class="actions">
-        <button id="btn-hint" class="btn" type="button">Podpowiedź</button>
-        <button id="btn-reveal" class="btn" type="button">Pokaż</button>
-        <button class="btn primary" type="submit">Sprawdź</button>
-      </div>
-    </form>
-  </section>
-
-  <!-- Układanie punktów pasma w kolejności -->
-  <section id="screen-order" class="screen quiz">
-    <header class="bar">
-      <button id="order-back" class="icon-btn" type="button" aria-label="Wróć">←</button>
-      <div class="bar-title">
-        <strong id="order-title"></strong>
-        <span id="order-progress"></span>
-      </div>
-    </header>
-
-    <ol id="slots" class="slots"></ol>
-
-    <div class="order-bottom">
-      <p id="order-feedback" class="feedback" aria-live="polite"></p>
-      <div id="pool" class="pool"></div>
-      <div class="stepper compact">
-        <span>Klocków naraz</span>
-        <button class="icon-btn batch-dec" type="button" aria-label="Mniej klocków">−</button>
-        <strong class="batch-value">8</strong>
-        <button class="icon-btn batch-inc" type="button" aria-label="Więcej klocków">+</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Podsumowanie -->
-  <section id="screen-end" class="screen">
-    <header class="hero">
-      <h1>Koniec!</h1>
-      <p id="summary"></p>
-    </header>
-    <button id="again" class="btn primary big" type="button">Jeszcze raz</button>
-    <button id="home" class="btn big" type="button">Menu</button>
-  </section>
-
-  <script src="app.js?v=8"></script>
+  <main>
+    <p>Aplikacja „Szlaki długodystansowe Beskidów” jest teraz pod adresem:</p>
+    <p><a href="https://szlaki.kj88.pl/">szlaki.kj88.pl</a></p>
+  </main>
 </body>
 </html>
